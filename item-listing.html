@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Showtrove</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css"> 
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.6.2/css/buttons.dataTables.min.css">
+
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="fonts.css" type="text/css" charset="utf-8" />
+<link rel="stylesheet" href="fontsr.css" type="text/css" charset="utf-8" />
+<script src="jquery/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<!-- right sidebar -->
+<div class="side-form display-sidebar w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-right" style="width:50%;right:0;" id="mySidebar">
+<div class="row form-head">
+	<div class="col-md-6">
+		<h2 class="side-form-h">EDIT</h2>
+	</div>
+	<div class="col-md-6">
+		<button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()"><i class="fa fa-window-close" aria-hidden="true"></i>
+		</button>
+	</div>
+</div>
+<!-- form start -->
+<form data-validation="true" action="#" method="post" enctype="multipart/form-data">
+  <div class="form-row row">
+  	<div class="col-md-12">
+    <!-- upload image box -->
+<div class="item-wrapper one">
+<div class="item">
+    <div class="item-inner">
+      <div class="item-content">
+       <div class="image-upload">
+        <label style="cursor: pointer;" for="file_upload"> <img src="" alt="" class="uploaded-image">
+            <div class="h-100">
+                <div class="dplay-tbl">
+                    <div class="dplay-tbl-cell"> <i class="fa fa-cloud-upload"></i>
+                        <h5><b>Choose Your Image to Upload</b></h5>
+                        <h6 class="mt-10 mb-70">Or Drop Your Image Here</h6>
+                    </div>
+                </div>
+            </div>
+            <!--upload-content--> <input data-required="image" type="file" name="image_name" id="file_upload" class="image-input" data-traget-resolution="image_resolution" value="">
+      </label> 
+    </div>
+   </div>
+  </div>
+</div>
+</div>
+<!-- upload image box -->
+  	</div>
+  </div>
+  <div class="form-row row">
+  	<div class="col-md-12">
+  		<label class="control-label">Name</label>
+  	  <select class="custom-select">
+        <option value="">select</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-row row">
+    <div class="col-md-12">
+      <label class="control-label">Category</label>
+      <select class="custom-select">
+        <option value="">currency>coins>piants</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-row row">
+    <div class="col-md-12">
+      <label class="control-label">Description</label>
+      <input type="text" class="full-input" placeholder="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.">
+    </div>
+  </div>
+  <div class="form-row row">
+  	<div class="col-md-12">
+  		<label class="control-label" for="email">Item Fields</label>
+  	</div>
+   </div>
+    <div class="form-row row">
+  	<div class="col-md-12">
+  		<div class="col-md-6">
+        <label class="control-label" for="email">Record No</label>
+        <input type="text" class="full-input" placeholder="2124">
+      </div>
+      <div class="col-md-6">
+        <label class="control-label" for="email">Item Value</label>
+        <input type="text" class="full-input" placeholder="$ 5,600">
+      </div>
+    </div>
+  </div>
+  <div class="form-row row">
+    <div class="col-md-12">
+      <div class="col-md-6">
+        <label class="control-label" for="email">Date Of Creation</label>
+        <input type="text" class="full-input" placeholder="6 October , 2016">
+      </div>
+      <div class="col-md-6">
+        <label class="control-label" for="email">Made By</label>
+        <input type="text" class="full-input" placeholder="Bernard Pena">
+      </div>
+    </div>
+  </div>
+  <div class="form-group" style="text-align: center;">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="custom-btn form-btn">SAVE</button>
+    </div>
+  </div>
+</form>
+<!-- form End -->
+</div>
+<!-- right sidebar -->
+
+<!-- right sidebar 2-->
+<div class="side-form display-sidebar w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-right" style="width:50%;right:0;" id="mySidebar_2">
+<div class="row form-head">
+  <div class="col-md-6">
+    <h2 class="side-form-h">VIEW</h2>
+  </div>
+  <div class="col-md-6">
+    <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close_2()"><i class="fa fa-window-close" aria-hidden="true"></i>
+    </button>
+  </div>
+</div>
+<!-- form start -->
+<form data-validation="true" action="#" method="post" enctype="multipart/form-data">
+  
+  <div class="form-row row">
+    <div class="col-md-12">
+      <label class="control-label">Coin Plant</label>
+      <label class="control-label">Currency | coin | plant</label>
+      <img style="width: 100%;" src="file:///C:/Users/USER/Downloads/Downloads/graffer/Showtrove/images/plant.jpg">
+      <div class="row">
+        <div class="col-md-12">
+          <div style="padding: 20px 0px 0px 0px;" class="col-md-8">
+            <div class="col-md-6">
+              <img style="width: 150px;" src="file:///C:/Users/USER/Downloads/Downloads/graffer/Showtrove/images/plant.jpg">
+            </div>
+            <div class="col-md-6">
+              <img style="width: 150px;" src="file:///C:/Users/USER/Downloads/Downloads/graffer/Showtrove/images/plant.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-row row">
+    <div class="col-md-12">
+        <h2 class="side-form-h">Desciption</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    </div>
+  </div>
+  <div class="form-row row">
+    <div class="col-md-12">
+      <h2 class="side-form-h">Item Info</h2>
+      <div class="col-md-6">
+        <p>Record Number</p>
+        <p>Item Value</p>
+        <p>Date Of Creation</p>
+        <p>Made by</p>
+      </div>
+      <div class="col-md-6">
+        <p>#2124</p>
+        <p>$ 5,600</p>
+        <p>6 October , 2016</p>
+        <p>Bernard Pena</p>
+      </div>
+    </div>
+  </div>
+  <div class="form-row row">
+    <div class="col-md-12">
+        <h2 class="side-form-h">Item Owner</h2>
+        <p>Lorem Ipsum</p>
+    </div>
+  </div>
+  
+</form>
+<!-- form End -->
+</div>
+<!-- right sidebar 2-->
+
+
+<!--top-navbar-->
+<div class="container top-nav">
+   <div class="row">
+   	<div class="col-md-6 top-logo">
+   		<img src="showtrove/logo/Logo.png" alt="Logo">
+   	</div>
+
+   	<div class="col-md-6 top-right">
+   		<a href="#">
+   			<i class="fa fa-bell-o top-icon"></i>
+   		</a>
+   		<a href="#">
+   			<img class="top-img" src="showtrove/avatar/avatar3.png" alt="Logo">
+   		</a>   		
+   		<select class="top-select">
+   		  <option>Jones Ferdinand</option>
+	      <option>2</option>
+	    </select>
+   	</div>
+   </div>
+</div>
+<!--//top-navbar-->
+
+<!-- left sidebar -->
+<div class="sidenav sidebar-icon" id="myDIV"> 
+  <a class="icon active" href="item-listing.html">
+  	<i class="fa fa-file-o side-icon" aria-hidden="true"></i>
+  </a>
+  <a class="icon" href="category-listing.html">
+  	<i class="fa fa-hospital-o side-icon" aria-hidden="true"></i>
+  </a>
+  <a class="icon" href="user-listing.html"><i class="fa fa-users side-icon" aria-hidden="true"></i></a>
+  <a class="icon" href="membership.html"><i class="fa fa-user-o side-icon" aria-hidden="true"></i></a>
+  <a class="icon" href="report-listing.html"><i class="fa fa-book side-icon" aria-hidden="true"></i></a>
+</div>
+<!-- left sidebar -->
+
+<!--middle section-->
+<div class="member">
+	<div class="row">
+		<div class="col-md-6 mem-div">
+			<h2 class="member-title">ITEM LISTING</h2>
+		</div>
+		<div class="col-md-6 mem-div-btn">
+			
+		</div>
+	</div>
+</div>
+<!--middle section-->
+
+<!--price section-->
+<div class="custom-datatable">
+	<div class="row">
+		<div class="col-md-12">
+      <!-- table -->
+      <table id="example" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>ITEM ID</th>
+                <th>ITEM NAME</th>
+                <th>CATRGORY</th>
+                <th>SUB CATEGORY1</th>
+                <th>SUB CATEGORY2</th>
+                <th>SUB CATEGORY3</th>
+                <th>ACTION</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tiger Nixon</td>
+                <td><a onclick="w3_open_2()" class="  mem-btn w3-button w3-teal w3-xlarge w3-right w3-hide-large">System Architect</a>
+                </td>
+                <td>Edinburgh</td>
+                <td>61</td>
+                <td>2011/04/25</td>
+                <td>$320,800</td>
+                <td>
+                  <i class="fa fa-check yellow-icon" aria-hidden="true"></i>
+                  <a onclick="w3_open_2()" class="mem-btn w3-button w3-teal w3-xlarge w3-right w3-hide-large"><i class="fa fa-pencil edit-icon" aria-hidden="true"></i>
+                  </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Garrett Winters</td>
+                <td><a onclick="w3_open()" class="  mem-btn w3-button w3-teal w3-xlarge w3-right w3-hide-large">Accountant</a>
+                </td>
+                <td>Tokyo</td>
+                <td>63</td>
+                <td>2011/07/25</td>
+                <td>$170,750</td>
+                <td><i class="fa fa-ban ban-icon" aria-hidden="true"></i>
+                  <a onclick="w3_open()" class="  mem-btn w3-button w3-teal w3-xlarge w3-right w3-hide-large"><i class="fa fa-pencil edit-icon" aria-hidden="true"></i>
+                  </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Ashton Cox</td>
+                <td><a onclick="w3_open_2()" class="  mem-btn w3-button w3-teal w3-xlarge w3-right w3-hide-large">Junior Technical Author</a></td>
+                <td>San Francisco</td>
+                <td>66</td>
+                <td>2009/01/12</td>
+                <td>$86,000</td>
+                <td><i class="fa fa-check yellow-icon" aria-hidden="true"></i>
+                  <a onclick="w3_open()" class="  mem-btn w3-button w3-teal w3-xlarge w3-right w3-hide-large"><i class="fa fa-pencil edit-icon" aria-hidden="true"></i>
+                  </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Cedric Kelly</td>
+                <td><a onclick="w3_open_2()" class="  mem-btn w3-button w3-teal w3-xlarge w3-right w3-hide-large">Senior Javascript Developer</a></td>
+                <td>Edinburgh</td>
+                <td>22</td>
+                <td>2012/03/29</td>
+                <td>$433,060</td>
+                <td><i class="fa fa-check yellow-icon" aria-hidden="true"></i>
+                  <a onclick="w3_open()" class="  mem-btn w3-button w3-teal w3-xlarge w3-right w3-hide-large"><i class="fa fa-pencil edit-icon" aria-hidden="true"></i>
+                  </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Airi Satou</td>
+                <td><a onclick="w3_open_2()" class="  mem-btn w3-button w3-teal w3-xlarge w3-right w3-hide-large">Accountant</a></td>
+                <td>Tokyo</td>
+                <td>33</td>
+                <td>2008/11/28</td>
+                <td>$162,700</td>
+                <td><i class="fa fa-check yellow-icon" aria-hidden="true"></i>
+                  <a onclick="w3_open()" class="  mem-btn w3-button w3-teal w3-xlarge w3-right w3-hide-large"><i class="fa fa-pencil edit-icon" aria-hidden="true"></i>
+                  </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Brielle Williamson</td>
+                <td>Integration Specialist</td>
+                <td>New York</td>
+                <td>61</td>
+                <td>2012/12/02</td>
+                <td>$320,800</td>
+                <td><i class="fa fa-check yellow-icon" aria-hidden="true"></i>
+                  <a onclick="w3_open()" class="  mem-btn w3-button w3-teal w3-xlarge w3-right w3-hide-large"><i class="fa fa-pencil edit-icon" aria-hidden="true"></i>
+                  </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Herrod Chandler</td>
+                <td>Sales Assistant</td>
+                <td>San Francisco</td>
+                <td>59</td>
+                <td>2012/08/06</td>
+                <td>$137,500</td>
+                <td><i class="fa fa-check yellow-icon" aria-hidden="true"></i>
+                  <a onclick="w3_open()" class="  mem-btn w3-button w3-teal w3-xlarge w3-right w3-hide-large"><i class="fa fa-pencil edit-icon" aria-hidden="true"></i>
+                  </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Rhona Davidson</td>
+                <td>Integration Specialist</td>
+                <td>Tokyo</td>
+                <td>55</td>
+                <td>2010/10/14</td>
+                <td>$327,900</td>
+                <td><i class="fa fa-check yellow-icon" aria-hidden="true"></i>
+                  <a onclick="w3_open()" class="  mem-btn w3-button w3-teal w3-xlarge w3-right w3-hide-large"><i class="fa fa-pencil edit-icon" aria-hidden="true"></i>
+                  </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Colleen Hurst</td>
+                <td>Javascript Developer</td>
+                <td>San Francisco</td>
+                <td>39</td>
+                <td>2009/09/15</td>
+                <td>$205,500</td>
+                <td><i class="fa fa-check yellow-icon" aria-hidden="true"></i>
+                  <a onclick="w3_open()" class="  mem-btn w3-button w3-teal w3-xlarge w3-right w3-hide-large"><i class="fa fa-pencil edit-icon" aria-hidden="true"></i>
+                  </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Sonya Frost</td>
+                <td>Software Engineer</td>
+                <td>Edinburgh</td>
+                <td>23</td>
+                <td>2008/12/13</td>
+                <td>$103,600</td>
+                <td><i class="fa fa-check yellow-icon" aria-hidden="true"></i>
+                  <a onclick="w3_open()" class="  mem-btn w3-button w3-teal w3-xlarge w3-right w3-hide-large"><i class="fa fa-pencil edit-icon" aria-hidden="true"></i>
+                  </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Jena Gaines</td>
+                <td>Office Manager</td>
+                <td>London</td>
+                <td>30</td>
+                <td>2008/12/19</td>
+                <td>$90,560</td>
+                <td><i class="fa fa-check yellow-icon" aria-hidden="true"></i>
+                  <a onclick="w3_open()" class="  mem-btn w3-button w3-teal w3-xlarge w3-right w3-hide-large"><i class="fa fa-pencil edit-icon" aria-hidden="true"></i>
+                  </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Quinn Flynn</td>
+                <td>Support Lead</td>
+                <td>Edinburgh</td>
+                <td>22</td>
+                <td>2013/03/03</td>
+                <td>$320,800</td>
+                <td><i class="fa fa-check yellow-icon" aria-hidden="true"></i>
+                  <a onclick="w3_open()" class="  mem-btn w3-button w3-teal w3-xlarge w3-right w3-hide-large"><i class="fa fa-pencil edit-icon" aria-hidden="true"></i>
+                  </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Charde Marshall</td>
+                <td>Regional Director</td>
+                <td>San Francisco</td>
+                <td>36</td>
+                <td>2008/10/16</td>
+                <td>$470,600</td>
+                <td><i class="fa fa-check yellow-icon" aria-hidden="true"></i>
+                  <a onclick="w3_open()" class="  mem-btn w3-button w3-teal w3-xlarge w3-right w3-hide-large"><i class="fa fa-pencil edit-icon" aria-hidden="true"></i>
+                  </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Haley Kennedy</td>
+                <td>Senior Marketing Designer</td>
+                <td>London</td>
+                <td>43</td>
+                <td>2012/12/18</td>
+                <td>$320,800</td>
+                <td><i class="fa fa-check yellow-icon" aria-hidden="true"></i>
+                  <a onclick="w3_open()" class="  mem-btn w3-button w3-teal w3-xlarge w3-right w3-hide-large"><i class="fa fa-pencil edit-icon" aria-hidden="true"></i>
+                  </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Tatyana Fitzpatrick</td>
+                <td>Regional Director</td>
+                <td>London</td>
+                <td>19</td>
+                <td>2010/03/17</td>
+                <td>$385,750</td>
+                <td><i class="fa fa-ban ban-icon" aria-hidden="true"></i>
+                  <a onclick="w3_open()" class="  mem-btn w3-button w3-teal w3-xlarge w3-right w3-hide-large"><i class="fa fa-pencil edit-icon" aria-hidden="true"></i>
+                  </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Michael Silva</td>
+                <td>Marketing Designer</td>
+                <td>London</td>
+                <td>66</td>
+                <td>2012/11/27</td>
+                <td>$198,500</td>
+                <td><i class="fa fa-ban ban-icon" aria-hidden="true"></i>
+                  <a onclick="w3_open()" class="  mem-btn w3-button w3-teal w3-xlarge w3-right w3-hide-large"><i class="fa fa-pencil edit-icon" aria-hidden="true"></i>
+                  </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Paul Byrd</td>
+                <td>Chief Financial Officer (CFO)</td>
+                <td>New York</td>
+                <td>64</td>
+                <td>2010/06/09</td>
+                <td>$320,800</td>
+                <td><i class="fa fa-ban ban-icon" aria-hidden="true"></i>
+                 <a onclick="w3_open()" class="  mem-btn w3-button w3-teal w3-xlarge w3-right w3-hide-large"><i class="fa fa-pencil edit-icon" aria-hidden="true"></i>
+                  </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Gloria Little</td>
+                <td>Systems Administrator</td>
+                <td>New York</td>
+                <td>59</td>
+                <td>2009/04/10</td>
+                <td>$237,500</td>
+                <td><i class="fa fa-ban ban-icon" aria-hidden="true"></i>
+                  <a onclick="w3_open()" class="  mem-btn w3-button w3-teal w3-xlarge w3-right w3-hide-large"><i class="fa fa-pencil edit-icon" aria-hidden="true"></i>
+                  </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Bradley Greer</td>
+                <td>Software Engineer</td>
+                <td>London</td>
+                <td>41</td>
+                <td>2012/10/13</td>
+                <td>$132,000</td>
+                <td><i class="fa fa-ban ban-icon" aria-hidden="true"></i>
+                  <a onclick="w3_open()" class="  mem-btn w3-button w3-teal w3-xlarge w3-right w3-hide-large"><i class="fa fa-pencil edit-icon" aria-hidden="true"></i>
+                  </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Dai Rios</td>
+                <td>Personnel Lead</td>
+                <td>Edinburgh</td>
+                <td>35</td>
+                <td>2012/09/26</td>
+                <td>$217,500</td>
+                <td><i class="fa fa-ban ban-icon" aria-hidden="true"></i>
+                  <a onclick="w3_open()" class="  mem-btn w3-button w3-teal w3-xlarge w3-right w3-hide-large"><i class="fa fa-pencil edit-icon" aria-hidden="true"></i>
+                  </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Jenette Caldwell</td>
+                <td>Development Lead</td>
+                <td>New York</td>
+                <td>30</td>
+                <td>2011/09/03</td>
+                <td>$345,000</td>
+                <td><i class="fa fa-ban ban-icon" aria-hidden="true"></i>
+                  <a onclick="w3_open()" class="  mem-btn w3-button w3-teal w3-xlarge w3-right w3-hide-large"><i class="fa fa-pencil edit-icon" aria-hidden="true"></i>
+                  </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Yuri Berry</td>
+                <td>Chief Marketing Officer (CMO)</td>
+                <td>New York</td>
+                <td>40</td>
+                <td>2009/06/25</td>
+                <td>$320,800</td>
+                <td><i class="fa fa-ban ban-icon" aria-hidden="true"></i>
+                  <a onclick="w3_open()" class="  mem-btn w3-button w3-teal w3-xlarge w3-right w3-hide-large"><i class="fa fa-pencil edit-icon" aria-hidden="true"></i>
+                  </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Caesar Vance</td>
+                <td>Pre-Sales Support</td>
+                <td>New York</td>
+                <td>21</td>
+                <td>2011/12/12</td>
+                <td>$106,450</td>
+                <td><i class="fa fa-ban ban-icon" aria-hidden="true"></i>
+                  <a onclick="w3_open()" class="  mem-btn w3-button w3-teal w3-xlarge w3-right w3-hide-large"><i class="fa fa-pencil edit-icon" aria-hidden="true"></i>
+                  </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Doris Wilder</td>
+                <td>Sales Assistant</td>
+                <td>Sydney</td>
+                <td>23</td>
+                <td>2010/09/20</td>
+                <td>$85,600</td>
+                <td><i class="fa fa-ban ban-icon" aria-hidden="true"></i>
+                  <a onclick="w3_open()" class=" mem-btn w3-button w3-teal w3-xlarge w3-right w3-hide-large"><i class="fa fa-pencil edit-icon" aria-hidden="true"></i>
+                  </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Angelica Ramos</td>
+                <td>Chief Executive Officer (CEO)</td>
+                <td>London</td>
+                <td>47</td>
+                <td>2009/10/09</td>
+                <td>$1,200,000</td>
+                <td><i class="fa fa-ban ban-icon" aria-hidden="true"></i>
+                  <i class="fa fa-pencil edit-icon" aria-hidden="true"></i>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>ITEM ID</th>
+                <th>ITEM NAME</th>
+                <th>CATRGORY</th>
+                <th>SUB CATEGORY1</th>
+                <th>SUB CATEGORY2</th>
+                <th>SUB CATEGORY3</th>
+                <th>ACTION</th>
+            </tr>
+        </tfoot>
+    </table>
+    <!-- table -->
+    </div>
+	</div>
+</div>
+<!--middle section-->
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+// second sidebar
+function w3_open_2() {
+  document.getElementById("mySidebar_2").style.display = "block";
+}
+
+function w3_close_2() {
+  document.getElementById("mySidebar_2").style.display = "none";
+}
+</script>
+<script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myDIV");
+var btns = header.getElementsByClassName("icon");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.6.2/js/dataTables.buttons.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.html5.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready( function() {
+    $('#example').DataTable( {
+        dom: 'Bfrtip',
+        buttons: [ {
+            extend: 'excelHtml5',
+            autoFilter: true,
+            sheetName: 'Exported data'
+        } ]
+    } );
+} );
+
+</script>
+
+</body>
+</html>

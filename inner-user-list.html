@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Showtrove</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css"> 
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.6.2/css/buttons.dataTables.min.css">
+
+
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="fonts.css" type="text/css" charset="utf-8" />
+<link rel="stylesheet" href="fontsr.css" type="text/css" charset="utf-8" />
+<script src="jquery/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<!-- Main Div to hide download data button -->
+<div class="inner-user-listing">
+
+
+<!--top-navbar-->
+<div class="container top-nav">
+   <div class="row">
+   	<div class="col-md-6 top-logo">
+   		<img src="showtrove/logo/Logo.png" alt="Logo">
+   	</div>
+
+   	<div class="col-md-6 top-right">
+   		<a href="#">
+   			<i class="fa fa-bell-o top-icon"></i>
+   		</a>
+   		<a href="#">
+   			<img class="top-img" src="showtrove/avatar/avatar3.png" alt="Logo">
+   		</a>   		
+   		<select class="top-select">
+   		  <option>Jones Ferdinand</option>
+	      <option>2</option>
+	    </select>
+   	</div>
+   </div>
+</div>
+<!--//top-navbar-->
+
+<!-- left sidebar -->
+<div class="sidenav sidebar-icon" id="myDIV"> 
+  <a class="icon" href="item-listing.html">
+  	<i class="fa fa-file-o side-icon" aria-hidden="true"></i>
+  </a>
+  <a class="icon" href="category-listing.html">
+  	<i class="fa fa-hospital-o side-icon" aria-hidden="true"></i>
+  </a>
+  <a class="icon active" href="user-listing.html"><i class="fa fa-users side-icon" aria-hidden="true"></i></a>
+  <a class="icon" href="membership.html"><i class="fa fa-user-o side-icon" aria-hidden="true"></i></a>
+  <a class="icon" href="report-listing.html"><i class="fa fa-book side-icon" aria-hidden="true"></i></a>
+</div>
+<!-- left sidebar -->
+
+<!--middle section-->
+<!-- icon and heading start -->
+<div class="top-head">
+	<div class="row">
+		<div class="col-md-6 middle-logo">
+			<img src="showtrove/avatar/avatar.png" alt="Logo">
+		</div>
+		<div class="col-md-6 ">
+			<h2>Tyrone Steward</h2>
+      <p>@yellowsnake313</p>
+      <p>San Francisco CA, USA</p>
+      <p>Ovseall Rnaking : 110</p>
+      <p>60 Followers 160 Following</p>
+		</div>
+	</div>
+</div>
+<!-- icon and heading end -->
+<div class="top-lines">
+  <div class="row">
+    <div class="col-md-3 top-line">
+      <p>Total purchase price : $ 2500</p>
+    </div>
+    <div class="col-md-3 top-line">
+      <p>Total item value price : $ 4500</p>
+    </div>
+    <div class="col-md-3 top-line">
+      <p>Total Profit : $ 2000</p>
+    </div>
+  </div>
+</div>
+
+<!-- toggle box start -->
+<div class="custom-toggle">
+<div id="myBtnContainer" class="toggle-head">
+  <button class="filter-btn active_2" onclick="filterSelection('collection')">My Collection</button>
+  <button class="filter-btn" onclick="filterSelection('showroom')">Showroom (5)</button>
+  <button class="filter-btn" onclick="filterSelection('scores')"> Scores (2)</button>
+</div>
+  
+<div class="filterDiv collection col-md-12">
+  <div id="myBtnContainer_2" class="">
+    <button class="filter-btn-2 active_3" onclick="filterSelection_2('current_collection')">Current Collection(7)</button>
+    <button class="filter-btn-2" onclick="filterSelection_2('post_collection')">Post Collection(7)</button>
+    <button class="filter-btn-2" onclick="filterSelection_2('item_request')"> Item Request (2)</button>
+    <!-- inner toggle -->
+    <div class="filterDiv_2 current_collection">
+    <div class="row">
+    <div class="col-md-3 product">
+      <img src="showtrove/avatar/avatar.png" alt="Logo">
+      <h3>Product Name</h3>
+      <p>Marvel</p>
+      <p>Private</p>
+    </div>
+    <div class="col-md-3 product">
+      <img src="showtrove/avatar/avatar.png" alt="Logo">
+      <h3>Product Name</h3>
+      <p>Marvel</p>
+      <p>Private</p>
+    </div>
+    <div class="col-md-3 product">
+      <img src="showtrove/avatar/avatar.png" alt="Logo">
+      <h3>Product Name</h3>
+      <p>Marvel</p>
+      <p>Private</p>
+    </div>
+    <div class="col-md-3 product">
+      <img src="showtrove/avatar/avatar.png" alt="Logo">
+      <h3>Product Name</h3>
+      <p>Marvel</p>
+      <p>Private</p>
+    </div>
+    </div>
+    <div class="filterDiv_2 post_collection">post collection</div>
+    <div class="filterDiv_2 item_request">item request</div>
+  </div>
+  
+<!-- inner toggle end -->
+
+  </div>
+  <div class="filterDiv showroom">
+    <div class="row">
+      <div class="col-md-3 product">
+        <img src="showtrove/avatar/avatar.png" alt="Logo">
+        <h3>Product Name</h3>
+        <p>Marvel</p>
+        <p>Private</p>
+      </div>
+    </div>
+  </div>
+  <div class="filterDiv scores">
+    <h3>Hello This is second showroom collection</h3>
+  </div>
+</div>
+
+
+
+
+</div>
+<!--middle section-->
+
+<!-- Main Div Close -->
+</div>
+
+<!-- toggle js start -->
+<script>
+filterSelection("collection")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("filter-btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active_2");
+    current[0].className = current[0].className.replace(" active_2", "");
+    this.className += " active_2";
+  });
+}
+// second toggle start
+filterSelection_2("current_collection")
+function filterSelection_2(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv_2");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer_2");
+var btns = btnContainer.getElementsByClassName("filter-btn-2");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active_3");
+    current[0].className = current[0].className.replace(" active_3", "");
+    this.className += " active_3";
+  });
+}
+</script>
+<!-- toggle js end -->
+
+<script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myDIV");
+var btns = header.getElementsByClassName("icon");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.6.2/js/dataTables.buttons.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.html5.min.js"></script>
+</script>
+
+</body>
+</html>

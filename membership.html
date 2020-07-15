@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Showtrove</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="fonts.css" type="text/css" charset="utf-8" />
+<link rel="stylesheet" href="fontsr.css" type="text/css" charset="utf-8" />
+<script src="jquery/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<!-- right sidebar -->
+<div class="side-form display-sidebar w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-right" style="width:50%;right:0;" id="mySidebar">
+<div class="row form-head">
+	<div class="col-md-6">
+		<h2 class="side-form-h">ADD</h2>
+	</div>
+	<div class="col-md-6">
+		<button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()"><i class="fa fa-window-close" aria-hidden="true"></i>
+		</button>
+	</div>
+</div>
+
+<div>
+<form class="" action="">
+  <div class="form-row row">
+  	<div class="col-md-6">
+  		<label class="control-label">Membership Plan Name</label>
+  	</div>
+    <div class="col-md-6">
+      <input type="text" class="" placeholder="select">
+    </div>
+  </div>
+  <div class="form-row row">
+  	<div class="col-md-6">
+  		<label class="control-label">Membership Plan Cost</label>
+  	</div>
+    <div class="col-md-6">
+      <input type="text" placeholder="$ 16"><p class="input-txt">/ month</p>
+    </div>
+  </div>
+  <div class="form-row row">
+  	<div class="col-md-6">
+  		<label class="control-label" for="email">Pics Per Item In Inventory</label>
+  	</div>
+    <div class="col-md-6">
+	    <select class="custom-select">
+	      <option value="">select</option>
+	      <option value="1">One</option>
+	      <option value="2">Two</option>
+	      <option value="3">Three</option>
+	    </select>
+    </div>
+   </div>
+    <div class="form-row row">
+  	<div class="col-md-6">
+  		<label class="control-label" for="email">Video Per Item In Inventory</label>
+  	</div>
+    <div class="col-md-6">
+      <select class="custom-select">
+	      <option value="">select</option>
+	      <option value="1">One</option>
+	      <option value="2">Two</option>
+	      <option value="3">Three</option>
+	    </select>
+    </div>
+  </div>
+    <div class="form-row row">
+  	<div class="col-md-6">
+  		<label class="control-label" for="email">Total Item In Inventory</label>
+  	</div>
+    <div class="col-md-6">
+      <select class="custom-select">
+	      <option value="">select</option>
+	      <option value="1">One</option>
+	      <option value="2">Two</option>
+	      <option value="3">Three</option>
+	    </select>
+    </div>
+  </div>
+    <div class="form-row row">
+  	<div class="col-md-6">
+  		<label class="control-label" for="email">Inventory File Size Limit</label>
+  	</div>
+    <div class="col-md-6">
+    	<div class="col-md-6">
+    		<p class="input-txt">Images</p>
+      		<input type="text" class="full-input" placeholder="   MB">
+    	</div>
+    	<div class="col-md-6">
+    		<p class="input-txt">Videos</p>
+      		<input type="text" class="full-input" placeholder="MB">
+    	</div>
+    </div>
+  </div>
+    <div class="form-row row">
+  	<div class="col-md-6">
+  		<label class="control-label" for="email">Total Post In Showroom</label>
+  	</div>
+    <div class="col-md-6">
+      <select class="custom-select">
+	      <option value="">select</option>
+	      <option value="1">One</option>
+	      <option value="2">Two</option>
+	      <option value="3">Three</option>
+	    </select>
+    </div>
+  </div>
+    <div class="form-row row">
+  	<div class="col-md-6">
+  		<label class="control-label" for="email">Showroom File Size Limit</label>
+  	</div>
+    <div class="col-md-6">
+     <div class="col-md-6">
+    		<p class="input-txt">Images</p>
+      		<input type="text" class="full-input" placeholder="   MB">
+    	</div>
+    	<div class="col-md-6">
+    		<p class="input-txt">Videos</p>
+      		<input type="text" class="full-input" placeholder="MB">
+    	</div>
+    </div>
+  </div>
+    <div class="form-row row">
+  	<div class="col-md-6">
+  		<label class="control-label" for="email">Pics Per Item In Score</label>
+  	</div>
+    <div class="col-md-6">
+      <select class="custom-select">
+	      <option value="">select</option>
+	      <option value="1">One</option>
+	      <option value="2">Two</option>
+	      <option value="3">Three</option>
+	    </select>
+    </div>
+  </div>
+    <div class="form-row row">
+  	<div class="col-md-6">
+  		<label class="control-label" for="email">Total Post In Score</label>
+  	</div>
+    <div class="col-md-6">
+      <select class="custom-select">
+	      <option value="">select</option>
+	      <option value="1">One</option>
+	      <option value="2">Two</option>
+	      <option value="3">Three</option>
+	    </select>
+    </div>
+  </div>
+    <div class="form-row row">
+  	<div class="col-md-6">
+  		<label class="control-label" for="email">Score File Size Limit</label>
+  	</div>
+    <div class="col-md-6">
+      <div class="col-md-6">
+    		<p class="input-txt">Images</p>
+      		<input type="text" class="full-input" placeholder="   MB">
+    	</div>
+    	<div class="col-md-6">
+    		<p class="input-txt">Videos</p>
+      		<input type="text" class="full-input" placeholder="MB">
+    	</div>
+    </div>
+  </div>
+  <h2>Marketing Fields</h2>
+  <div class="form-row row">
+  	<div class="col-md-5">
+  		<label class="control-label">Lable 1</label>
+  	</div>
+    <div class="col-md-7">
+      	<input type="text" class="" placeholder="">
+    </div>
+  </div>
+  <div class="form-row row">
+  	<div class="col-md-5">
+  		<label class="control-label">Lable 2</label>
+  	</div>
+    <div class="col-md-7">
+      	<input type="text" class="" placeholder="">
+    </div>
+  </div>
+  <div class="form-row row">
+  	<div class="col-md-5">
+  		<label class="control-label">Lable 3</label>
+  	</div>
+    <div class="col-md-7">
+      	<input type="text" class="" placeholder="">
+    </div>
+  </div>
+  <div class="form-row row">
+  	<div class="col-md-5">
+  		<label class="control-label">Show Ranking</label>
+  	</div>
+  	<div class="col-md-6 radio-btn">
+  		<div class="col-md-6">
+    		<input type="radio" class="radio-input"><h5>Yes</h5>
+    	</div>
+    	<div class="col-md-6">
+    		<input type="radio" class="radio-input"><h5>No</h5>
+    	</div>
+  	</div>
+  </div>
+  
+
+  <div class="form-group" style="text-align: center;">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="custom-btn form-btn">ADD</button>
+    </div>
+  </div>
+</form>
+</div>
+
+</div>
+<!-- right sidebar -->
+
+<!--top-navbar-->
+<div class="container top-nav">
+   <div class="row">
+   	<div class="col-md-6 top-logo">
+   		<img src="showtrove/logo/Logo.png" alt="Logo">
+   	</div>
+
+   	<div class="col-md-6 top-right">
+   		<a href="#">
+   			<i class="fa fa-bell-o top-icon"></i>
+   		</a>
+   		<a href="#">
+   			<img class="top-img" src="showtrove/avatar/avatar3.png" alt="Logo">
+   		</a>   		
+   		<select class="top-select">
+   		  <option>Jones Ferdinand</option>
+	      <option>2</option>
+	    </select>
+   	</div>
+   </div>
+</div>
+<!--//top-navbar-->
+
+<!-- left sidebar -->
+<div class="sidenav sidebar-icon" id="myDIV"> 
+  <a class="icon" href="item-listing.html">
+  	<i class="fa fa-file-o side-icon" aria-hidden="true"></i>
+  </a>
+  <a class="icon" href="category-listing.html">
+  	<i class="fa fa-hospital-o side-icon" aria-hidden="true"></i>
+  </a>
+  <a class="icon" href="user-listing.html"><i class="fa fa-users side-icon" aria-hidden="true"></i></a>
+  <a class="icon active" href="membership.html"><i class="fa fa-user-o side-icon" aria-hidden="true"></i></a>
+  <a class="icon" href="report-listing.html"><i class="fa fa-book side-icon" aria-hidden="true"></i></a>
+</div>
+<!-- left sidebar -->
+
+<!--middle section-->
+<div class="member">
+	<div class="row">
+		<div class="col-md-6 mem-div">
+			<h2 class="member-title">MEMBERSHIP</h2>
+		</div>
+		<div class="col-md-6 mem-div-btn">
+			<a onclick="w3_open()" class=" custom-btn mem-btn w3-button w3-teal w3-xlarge w3-right w3-hide-large">ADD MEMBERSHIP</a>
+		</div>
+	</div>
+</div>
+<!--middle section-->
+
+<!--price section-->
+<div class="price">
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-3 price-chart">
+			<h3 class="box-title">Free</h3>
+			<p>$ 0 <span>/ month</span></p>
+			<h4>Abilty to like posts, view posts andtransfer items</h4>
+ 			<ul>
+ 				<li><i class="fa fa-check" aria-hidden="true"></i><span>5 posts in showroom</span></li>
+ 				<li><i class="fa fa-check" aria-hidden="true"></i><span>5 posts in showroom</span></li>
+ 				<li><i class="fa fa-check" aria-hidden="true"></i><span> 5 posts in showroom</span></li>
+ 				<li><i class="fa fa-check" aria-hidden="true"></i><span>5 posts in showroom</span></li>
+ 			</ul>
+		</div>
+		<div class="col-md-3 price-chart">
+			<h3 class="box-title">Free</h3>
+			<p>$ 0 <span>/ month</span></p>
+			<h4>Abilty to like posts, view posts andtransfer items</h4>
+ 			<ul>
+ 				<li><i class="fa fa-check" aria-hidden="true"></i><span>5 posts in showroom</span></li>
+ 				<li><i class="fa fa-check" aria-hidden="true"></i><span>5 posts in showroom</span></li>
+ 				<li><i class="fa fa-check" aria-hidden="true"></i><span> 5 posts in showroom</span></li>
+ 				<li><i class="fa fa-check" aria-hidden="true"></i><span>5 posts in showroom</span></li>
+ 			</ul>
+		</div>
+		<div class="col-md-3 price-chart">
+			<h3 class="box-title">Free</h3>
+			<p>$ 0 <span>/ month</span></p>
+			<h4>Abilty to like posts, view posts andtransfer items</h4>
+ 			<ul>
+ 				<li><i class="fa fa-check" aria-hidden="true"></i><span>5 posts in showroom</span></li>
+ 				<li><i class="fa fa-check" aria-hidden="true"></i><span>5 posts in showroom</span></li>
+ 				<li><i class="fa fa-check" aria-hidden="true"></i><span> 5 posts in showroom</span></li>
+ 				<li><i class="fa fa-check" aria-hidden="true"></i><span>5 posts in showroom</span></li>
+ 			</ul>
+		</div>
+		<div class="col-md-1"></div>
+	</div>
+</div>
+<!--middle section-->
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+<script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myDIV");
+var btns = header.getElementsByClassName("icon");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+</script>
+</body>
+</html>
